@@ -15,7 +15,6 @@ data PatientData = Patient {
                             disease :: DiseaseType
 }
 
-virusText :: ViralDisease -> String
 -- diseaseText (Viral COVID) = "COVID"
 -- diseaseText (Viral MERS) = "MERS"
 -- diseaseText (Viral SARS) = "SARS"
@@ -23,6 +22,7 @@ virusText :: ViralDisease -> String
 -- diseaseText (Bacterial Campylobacter) = "Campylobacter"
 -- diseaseText (Bacterial Ecoli) = "Ecoli"
 
+virusText :: ViralDisease -> String
 virusText v = "Viral " ++ case v of
                                 COVID -> "COVID"
                                 SARS -> "SARS"
